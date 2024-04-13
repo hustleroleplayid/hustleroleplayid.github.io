@@ -41,14 +41,14 @@
                 untuk mengunduh file yang diedit. Ingatlah untuk membukanya dan mengedit id penanganannya.
             </p>
             <p class="text-center mt-5">
-                Also, you can load a custom handling file below.
+                Selain itu, Anda dapat memuat file Handling khusus di bawah.
             </p>
             <div class="d-flex justify-content-around">
 
                 <div class="">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input " id="handlingFileLoader">
-                        <label class="custom-file-label" for="handlingFileLoader">Select a handling.meta file...</label>
+                        <label class="custom-file-label" for="handlingFileLoader">Pilih file handling.meta...</label>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
 
             <div class="text-center mt-2">
                 <a name="" onfocus="UpdateFileObject()" id="savefile" class="btn btn-primary btn " href="#"
-                    role="button">Save Current File</a>
+                    role="button">Simpan File Saat Ini</a>
             </div>
             <div class="d-flex align-content-center mt-2">
             </div>
@@ -64,8 +64,8 @@
     </div>
 
     <!-- Alert in case the user does not load a handling file but tries to edit the values -->
-    <div class="alert alert-warning alert w-25 mx-auto text-center d-none" role="alert" id="wEmptyFile">Load a handling
-        file first.</div>
+    <div class="alert alert-warning alert w-25 mx-auto text-center d-none" role="alert" id="wEmptyFile">Memuat Handling
+        mengajukan terlebih dahulu.</div>
 
     <div class="container-fluid border py-2 px-5 mb-5" style="max-width:1500px">
         <!-- Tab links -->
@@ -117,8 +117,8 @@
 
                     <div class="border mt-3">
                         <h3 class="text-center py-1">Aero</h3>
-                        <p class="px-5 text-center">This set of values represent the vehicle body shape, and mostly
-                            affect top speed behavior.</p>
+                        <p class="px-5 text-center">Kumpulan nilai ini mewakili bentuk bodi kendaraan, dan sebagian besarnya
+                            mempengaruhi perilaku kecepatan tertinggi.</p>
                         <hr>
                         <div class="d-flex align-content-around px-3">
                             <div class="w-50 p-5">
@@ -138,22 +138,22 @@
                                         class="form-control text-center my-2" step="0.005" id="fDownforceModifierInput">
 
 
-                                    <p class="text-center">This car will generate <span id="fDownforceModifierExpl"
-                                            class="text-danger">d</span>Gs of additional grip at 60mph.</p>
+                                    <p class="text-center">Mobil ini akan menghasilkan <span id="fDownforceModifierExpl"
+                                            class="text-danger">d</span>Gs cengkeraman tambahan pada 60mph.</p>
                                     <hr>
 
-                                    <p>Downforce is a way to gain grip at speed, and can be increased by Spoilers.</p>
-                                    <p>In V, downforce is represented as two behaviors - an actual down force pressing
-                                        the car down, and a separate grip gain based on fDownforceModifier and a
-                                        ruleset. <br><br>The resulting value is added to the wheel grip, multiply by the
-                                        four wheels you'd usually have.</p>
+                                    <p>Downforce adalah cara untuk mendapatkan cengkeraman pada kecepatan, dan dapat ditingkatkan dengan Spoiler.</p>
+                                    <p>Dalam V, gaya ke bawah direpresentasikan sebagai dua perilaku - gaya ke bawah yang sebenarnya menekan
+                                        mobil turun, dan penguatan cengkeraman terpisah berdasarkan fDownforceModifier dan a
+                                        peraturan. <br><br>Nilai yang dihasilkan ditambahkan pada grip roda, dikalikan dengan
+                                        empat roda yang biasanya Anda miliki.</p>
                                     <hr>
-                                    <p>The value of fDownforceModifier can define one of three rulesets for the
-                                        Downforce calculations:
+                                    <p>Nilai fDownforceModifier dapat menentukan salah satu dari tiga kumpulan aturan untuk
+                                        Perhitungan gaya tekan ke bawah:
                                         <li>
-                                            <b>Dynamic</b>: Between 1.0 and 100. The vehicle gains grip at a variable
-                                            rate from 0 when static to 0.035 * fDownforceModifier at 90% of its top
-                                            speed.
+                                            <b>Dynamic</b>:Antara 1,0 dan 100. Kendaraan memperoleh cengkeraman pada suatu variabel
+                                            nilai dari 0 saat statis hingga 0,035 * fDownforceModifier pada 90% dari puncaknya
+                                            kecepatan.
                                         </li>
                                         <li>
                                             <b>Static (high)</b>: 1.0 or less. The vehicle gains a flat grip increase of
