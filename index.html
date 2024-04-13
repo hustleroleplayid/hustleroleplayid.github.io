@@ -389,12 +389,12 @@
                                 <input class="form-control text-center my-2" step="0.01" type="number"
                                     oninput="applyValueChange(this)" id="fInitialDriveMaxFlatVelInput"
                                     name="fInitialDriveMaxFlatVel">
-                                <p class="text-center">The vehicle's last gear will top at <span class="text-danger"
+                                <p class="text-center">Gigi terakhir kendaraan akan berada pada posisi teratas <span class="text-danger"
                                         id="fInitialDriveMaxFlatVelExpl">40</span> mph.</p>
                                 <hr>
 
-                                <p>Maximum engine top speed. Over this speed, the engine power will degrade greatly.</p>
-                                <p>Keep in mind that gearing will stretch over this 'length'.</p>
+                                <p>Kecepatan tertinggi mesin maksimum. Pada kecepatan ini, tenaga mesin akan menurun drastis.</p>
+                                <p>Perlu diingat bahwa gearing akan meregang sepanjang 'panjang' ini.</p>
                             </div>
 
                         </div>
@@ -404,8 +404,8 @@
             <div class="pb-5 tab-pane fade" id="transmission" role="tabpanel" aria-labelledby="transmission-tab">
                 <div class="border mt-3">
                     <h3 class="text-center py-1">Transmission</h3>
-                    <p class="px-5 text-center">Together with the Engine, the transmission settings define the power
-                        output of your vehicle.</p>
+                    <p class="px-5 text-center">Bersama dengan Mesin, pengaturan transmisi menentukan tenaga
+                        keluaran kendaraan Anda.</p>
                     <hr>
                     <div class="row pb-4 px-3">
                         <div class="col-md-4">
@@ -423,14 +423,14 @@
                                 <input class="form-control text-center my-2" type="number" value="6" step="1"
                                     oninput="applyValueChange(this) " id="nInitialDriveGearsInput"
                                     name="nInitialDriveGears">
-                                <p>Number of gears at stock.</p>
+                                <p>Jumlah roda gigi yang tersedia.</p>
                                 <hr>
-                                <p>As gears modulate the <i>fInitialDriveForce</i> up until
-                                    <i>fInitialDriveMaxFlatVel</i>, keepin a reasonably number of gears for your top
-                                    speed is reccomended.
+                                <p>Saat roda gigi memodulasi <i>fInitialDriveForce</i> hingga
+                                    <i>fInitialDriveMaxFlatVel</i>, pertahankan jumlah gigi yang cukup untuk performa terbaik Anda
+                                    kecepatan direkomendasikan.
                                 </p>
 
-                                <p>Remember Transmission upgrades add one gear total.</p>
+                                <p>Ingat Peningkatan transmisi menambah total satu gigi.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -479,9 +479,8 @@
                                 </div>
                                 <input class="form-control text-center my-2" step="0.01" type="number"
                                     oninput="applyValueChange(this)" id="fDriveBiasFrontInput" name="fDriveBiasFront">
-                                <p>Defines how the power from <i>fInitialDriveForce</i> is distributed between the
-                                    axles.</p>
-                                <p>0.0 implies a fully RWD setup, with will only deliver power to the rear wheels.</p>
+                                <p>Mendefinisikan bagaimana daya dari <i>fInitialDriveForce</i> didistribusikan di antara</p>
+                                <p>0,0 menyiratkan pengaturan RWD sepenuhnya, yang hanya akan menyalurkan tenaga ke roda belakang</p>
 
 
                             </div>
@@ -493,10 +492,10 @@
             <div class="pb-5 tab-pane fade" id="brakes" role="tabpanel" aria-labelledby="brakes-tab">
                 <div class="border mt-3">
                     <h3 class="text-center py-1">Brakes</h3>
-                    <p class="px-5 text-center">Brakes are one of the main defining factors of the performance of your
-                        vehicle. <br>This value should complement both the vehicle's power and traction, so as to keep a
-                        coherent balance.
-                        <br>Unless you have reasons for it not to.
+                    <p class="px-5 text-center">Rem adalah salah satu faktor penentu utama kinerja Anda
+                        kendaraan. <br>Nilai ini harus melengkapi tenaga dan traksi kendaraan, untuk menjaga a
+                        keseimbangan yang koheren.
+                        <br>Kecuali Anda punya alasan untuk tidak melakukannya.
                     </p>
 
                     <hr>
@@ -514,14 +513,14 @@
                                 </div>
                                 <input class="form-control text-center my-2" type="number" value="6" step="0.01"
                                     oninput="applyValueChange(this) " id="fBrakeForceInput" name="fBrakeForce">
-                                <p class="text-center">Target deceleration is 60-0 mph in ~<span class="text-danger"
+                                <p class="text-center">Deselerasi target adalah 60-0 mph ~<span class="text-danger"
                                         id="fBrakeForceExpl"></span>s.</p>
-                                <p>How many Gs of deceleration are applied to each wheel.</p>
+                                <p>Berapa G perlambatan yang diterapkan pada setiap roda.</p>
                                 <hr>
 
                                 <p>
-                                    <i>fTractionCurveMax</i> and <i>fBrakeForce</i> are closely related. Assuming
-                                    perfect balance, a fourth of brake is enough to make each wheel lockup.
+                                    <i>fTractionCurveMax</i> dan <i>fBrakeForce</i> berkaitan erat. Asumsi
+                                    keseimbangan sempurna, seperempat rem sudah cukup untuk membuat setiap roda terkunci.
                                 </p>
 
                             </div>
@@ -541,11 +540,11 @@
                                     oninput="applyValueChange(this)" id="fBrakeBiasFrontInput" name="fBrakeBiasFront">
 
                                 <p class="text-center"><span class="" id="fBrakeBiasFrontExpl"></span></p>
-                                <p>Distribution of the brake strength between the axles.</p>
+                                <p>Distribusi kekuatan rem antar gandar.</p>
                                 <p>
-                                    Usually, the best balance is between 0.55 and 0.7 for best braking capabilities, as
-                                    it accounts for the weight transfer that ensues when braking.<br><br>Vehicles with
-                                    more body lean typically need more balance to the front.
+                                    Biasanya, keseimbangan terbaik adalah antara 0,55 dan 0,7 untuk kemampuan pengereman terbaik
+                                    ini bertanggung jawab atas perpindahan berat yang terjadi saat pengereman.<br><br>Kendaraan dengan
+                                    tubuh yang lebih ramping biasanya membutuhkan lebih banyak keseimbangan ke depan.
                                 </p>
                             </div>
                         </div>
@@ -563,7 +562,7 @@
                                 </div>
                                 <input class="form-control text-center my-2" step="0.01" type="number"
                                     oninput="applyValueChange(this)" id="fHandBrakeForceInput" name="fHandBrakeForce">
-                                <p>Similar to <i>fBrakeForce</i>, but is only applied to the rear axle(s). </p>
+                                    <p>Mirip dengan <i>fBrakeForce</i>, namun hanya diterapkan pada poros belakang. </p>
                             </div>
                         </div>
                     </div>
@@ -572,10 +571,10 @@
             <div class="pb-5 tab-pane fade" id="traction" role="tabpanel" aria-labelledby="traction-tab">
                 <div class="border mt-3">
                     <h3 class="text-center py-1">Traction</h3>
-                    <p class="px-5 text-center">Traction is the main limiter of power and braking ability, and has to be
-                        able to handle both; otherwise your vehicle may suffer wheelspin/wheel lock.
-                        <br>However, these can also be treated as features and not defects, being part of the vehicle's
-                        personality.
+                    <p class="px-5 text-center">Traksi adalah pembatas utama tenaga dan kemampuan pengereman, dan memang demikian adanya
+                        mampu menangani keduanya; jika tidak, kendaraan Anda mungkin mengalami putaran roda/roda terkunci.
+                        <br>Namun, hal ini juga dapat dianggap sebagai fitur dan bukan cacat, karena merupakan bagian dari kendaraan
+                        kepribadian.
                     </p>
                     <hr>
                     <div class="row pb-4 px-3">
@@ -605,15 +604,15 @@
                                 <input class="form-control text-center my-2" type="number" value="6" step="0.025"
                                     oninput="applyValueChange(this) " id="fTractionCurveMinInput"
                                     name="fTractionCurveMin">
-                                <p>Maximum and minimum G's the vehicle's wheels are able to pull.</p>
+                                <p>G maksimum dan minimum yang mampu ditarik oleh roda kendaraan.</p>
                                 <hr>
                                 <p>
-                                    In V, grip is represented as how much the vehicle's tires are able to accelerate or
-                                    decelerate the car's body, as a whole.
+                                    Dalam V, grip direpresentasikan sebagai seberapa besar kemampuan ban kendaraan untuk berakselerasi atau
+                                    memperlambat bodi mobil secara keseluruhan.
                                 </p>
                                 <p>
-                                    These values are constantly changed around by context, like suspension pressure,
-                                    surface the tire is driving on, etcetera.
+                                    Nilai-nilai ini terus berubah berdasarkan konteks, seperti tekanan suspensi,
+                                    permukaan tempat ban dikendarai, dan sebagainya.
                                 </p>
                             </div>
                         </div>
@@ -631,16 +630,16 @@
                                 <input class="form-control text-center my-2" step="0.25" type="number"
                                     oninput="applyValueChange(this)" id="fTractionCurveLateralInput"
                                     name="fTractionCurveLateral">
-                                <p>Slide angle at which the car will enjoy the best grip available.</p>
+                                    <p>Sudut geser di mana mobil akan menikmati cengkeraman terbaik yang ada.</p>
                                 <hr>
                                 <p>
-                                    The vehicle will tend to stay below half of this value.
+                                    Kendaraan akan cenderung berada di bawah setengah dari nilai ini.
 
                                 </p>
                                 <p>
-                                    It is reccomended to keep it at default 22.5 on most vehicles, though Sports and
-                                    Supercars can have it as low as 18º if you so desire, making them stay more
-                                    straight. Over 24º is not reccomended save for the slidiest cars, like old muscles.
+                                    Disarankan untuk tetap pada default 22,5 pada sebagian besar kendaraan, meskipun Sports dan
+                                    Supercar dapat memiliki suhu serendah 18º jika Anda menginginkannya, membuatnya bertahan lebih lama
+                                    lurus. Suhu di atas 24º tidak direkomendasikan kecuali untuk mobil yang paling licin, seperti mobil yang sudah tua.
                                 </p>
                             </div>
                         </div>
@@ -662,10 +661,10 @@
                                         id="fTractionBiasFrontExpl"></span></p>
                                 <hr>
                                 <p>
-                                    This value perfectly describes situations where the front and rear axles have
-                                    different kinds of wheels, be it the compounds are different, or the tire width is
-                                    different.<br><br> Very useful for dragsters and high performance cars who come with
-                                    changes like these.
+                                    Nilai ini secara sempurna menggambarkan situasi dimana as roda depan dan belakang memiliki
+                                    jenis velgnya berbeda-beda, entah komponnya berbeda, atau lebar bannya berbeda
+                                    berbeda.<br><br> Sangat berguna untuk dragster dan mobil berperforma tinggi yang menyertainya
+                                    perubahan seperti ini.
                                 </p>
                             </div>
                         </div>
@@ -685,12 +684,13 @@
                                 <input class="form-control text-center my-2" type="number" value="6" step="1"
                                     oninput="applyValueChange(this) " id="fTractionLossMultInput"
                                     name="fTractionLossMult">
-                                <p>How exaggerated the traction loss is for this vehicle.</p>
                                 <p>
-                                    A value of 1.0 makes the car lose grip on each surface as expected by the game.
-                                    Below 1.0 you lose less grip than normal, over 1.0 you lose more grip than normal.
-                                    <br><br>High end cars can have up to 1.5 or so before the traction loss of certain
-                                    surfaces ends up making the car have negative grip.
+                                    Betapa berlebihannya kehilangan traksi pada kendaraan ini.</p>
+                                <p>
+                                    Nilai 1.0 membuat mobil kehilangan cengkeraman di setiap permukaan seperti yang diharapkan dalam permainan.
+                                    Di bawah 1,0 Anda kehilangan cengkeraman lebih sedikit dari biasanya, di atas 1,0 Anda kehilangan lebih banyak cengkeraman dari biasanya.
+                                    <br><br>Mobil kelas atas dapat memiliki hingga 1,5 atau lebih sebelum kehilangan traksi tertentu
+                                    permukaan akhirnya membuat mobil memiliki cengkeraman negatif.
                                 </p>
                             </div>
                         </div>
@@ -708,7 +708,7 @@
                                 <input class="form-control text-center my-2" step="0.01" type="number"
                                     oninput="applyValueChange(this)" id="fLowSpeedTractionLossMultInput"
                                     name="fLowSpeedTractionLossMult">
-                                <p>How exaggerated the fake burnout griploss is for this vehicle.</p>
+                                <p>Betapa berlebihannya griploss burnout palsu untuk kendaraan ini.</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -1162,14 +1162,14 @@
                 <h3 class="text-center">Comparisons</h3>
                 <hr>
                 <div class="w-25 mx-auto mb-5">
-                    <p>You can add a comparison item for in the graphs by uploading another handling file here.</p>
+                    <p>Anda dapat menambahkan item perbandingan dalam grafik dengan mengunggah file penanganan lain di sini.</p>
                     <div class="custom-file">
 
                         <input type="file" class="custom-file-input" id="compparisonHandlingFileLoader">
                         <label class="custom-file-label" for="compparisonHandlingFileLoader">Select a handling.meta
                             file...</label>
                     </div>
-                    <p class="mt-2">You can drop handling.meta files from OpenIV directly.</p>
+                    <p class="mt-2">Anda dapat melepaskan file handling.meta dari OpenIV secara langsung.</p>
                 </div>
 
                 <div class="row">
