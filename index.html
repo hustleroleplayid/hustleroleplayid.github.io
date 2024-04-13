@@ -156,20 +156,20 @@
                                             kecepatan.
                                         </li>
                                         <li>
-                                            <b>Static (high)</b>: 1.0 or less. The vehicle gains a flat grip increase of
-                                            0.035, 0.07 if using a tuning Spoiler.
+                                            <b>Static (high)</b>: 1,0 atau kurang. Kendaraan memperoleh peningkatan cengkeraman datar sebesar
+                                            0,035, 0,07 jika menggunakan Spoiler tuning.
                                         </li>
                                         <li>
-                                            <b>Static (low)</b>: 100 or more. The vehicle gains a flat grip increase of
-                                            0.0105, 0.01313 if using a spoiler.
+                                            <b>Static (low)</b>: 100 atau lebih. Kendaraan memperoleh peningkatan cengkeraman datar sebesar
+                                            0,0105, 0,01313 jika menggunakan spoiler.
                                         </li>
                                     </p>
-                                    <p>Active Aero vehicles ignore this value, setting a 0.035 gain when the spoiler is
-                                        raised, up to 0.07 when it pitches down to aid cornering or braking.</p>
+                                    <p>Kendaraan Aero aktif mengabaikan nilai ini, menetapkan penguatan 0,035 saat spoiler dipasang
+                                        dinaikkan, hingga 0,07 saat diturunkan untuk membantu menikung atau mengerem.</p>
                                     <hr>
-                                    <p>There is a fourth ruleset, used on the Open Wheel vehicles, which requires
-                                        advanced flags and defines specific rates per Spoiler/Bumper. Investigation is
-                                        still ongoing.</p>
+                                    <p>Ada aturan keempat, yang digunakan pada kendaraan Roda Terbuka, yang mengharuskan
+                                        bendera tingkat lanjut dan menentukan tarif spesifik per Spoiler/Bumper. Investigasi adalah
+                                        masih berlangsung.</p>
 
                                 </div>
                             </div>
@@ -188,29 +188,28 @@
                                     </div>
                                     <input type="number" oninput="applyValueChange(this)" name="fInitialDragCoeff"
                                         class="form-control text-center my-2" step="0.05" id="fInitialDragCoeffInput">
-                                    <p>The vehicle's body air resistance.
-                                    </p>
+                                    <p>Hambatan udara pada badan kendaraan.</p>
                                     <p>
-                                        Higher resistance means an eariler perceived loss of
-                                        power at higher speed, resulting in a lower top speed, as the engine cannot
-                                        overpower this force. Lower air resistance allows the vehicle to travel faster
-                                        on the same power.
+                                        Resistensi yang lebih tinggi berarti kerugian yang dirasakan lebih awal
+                                        tenaga pada kecepatan lebih tinggi, menghasilkan kecepatan tertinggi lebih rendah, karena mesin tidak bisa
+                                        mengalahkan kekuatan ini. Hambatan udara yang lebih rendah memungkinkan kendaraan melaju lebih cepat
+                                        pada kekuatan yang sama.
                                     </p>
 
-                                    <p>Working as a multiplier, this value defines how much will air drag scale with
-                                        speed. The higher the multiplier, the more powerful air resistance will be at
-                                        high speeds.</p>
+                                    <p>Berfungsi sebagai pengganda, nilai ini menentukan seberapa besar skala hambatan udara
+                                        kecepatan. Semakin tinggi pengalinya, maka hambatan udara akan semakin kuat
+                                        kecepatan tinggi.</p>
                                     <!--
                                     <div class="alert alert-warning mt-3" role="alert">This value does not yet simulate
                                         torque falloff at the end of the gear, so it is innacurate. It will show a top
                                         speed lower than the ingame top speed.</div>-->
                                     <div class="pl-5 font-italic">
-                                        <li>The tug of war between Torque and Drag is not very strong. Your vehicle can
-                                            easily go over this speed on downhill or under performance upgrades, though
-                                            not very far.</li>
-                                        <li>Drag works against Torque. Both are measured in G-Forces, the speed at which
-                                            they even out is the vehicle's top speed.</li>
-                                        <li>Unlike Downforce, drag is omnidirectional.</li>
+                                        <li>Tarik menarik antara Torsi dan Drag tidak terlalu kuat. Kendaraan Anda bisa
+                                            dengan mudah melampaui kecepatan ini saat menuruni bukit atau dalam peningkatan performa
+                                            tidak terlalu jauh.</li>
+                                        <li>Drag bekerja melawan Torsi. Keduanya diukur dalam G-Forces, kecepatannya
+                                            mereka meratakan kecepatan tertinggi kendaraan.</li>
+                                        <li>Berbeda dengan Downforce, gaya hambat bersifat segala arah.</li>
                                     </div>
                                 </div>
                             </div>
@@ -224,8 +223,8 @@
                 <div class="row pb-4 px-3">
                     <div class="border mt-3">
                         <h3 class="text-center py-1">Chassis</h3>
-                        <p class="px-5 text-center">This set of values represent the vehicle body itself, and will play
-                            a big role on how the vehicle behaves overall.</p>
+                        <p class="px-5 text-center">Kumpulan nilai ini mewakili bodi kendaraan itu sendiri, dan akan berperan
+                            peran besar pada bagaimana kendaraan berperilaku secara keseluruhan.</p>
                         <hr>
 
                         <div class="row px-3">
@@ -244,17 +243,17 @@
                                         <div class="text-center" style="min-height:50px">
                                             <input type="number" oninput="applyValueChange(this)" name="fMass"
                                                 id="fMassInput" class="form-control text-center my-2">
-                                            <small class="d-none">Your car will weight <span
+                                            <small class="d-none">Mobil Anda akan menjadi berat<span
                                                     class="text-danger">1000</span>kg.</small>
                                         </div>
                                     </div>
-                                    <p>Measured in Kg, mass is only responsible for the interaction between entities.
-                                        Let's
-                                        say its the vehicle's pushing force. </p>
-                                    <p>Mass is not at all related to physical
-                                        agility and does not affect the car's physics at all. Only affects how well the
-                                        car fares when colliding
-                                        with other entities. Vehicles, Lamp posts, rocks, etc.</p>
+                                    <p>Diukur dalam Kg, massa hanya bertanggung jawab atas interaksi antar entitas.
+                                        Ayo
+                                        katakanlah itu gaya dorong kendaraan. </p>
+                                    <p>Massa sama sekali tidak berhubungan dengan fisik
+                                        kelincahan dan tidak mempengaruhi fisika mobil sama sekali. Hanya mempengaruhi seberapa baik
+                                        tarif mobil saat bertabrakan
+                                        dengan entitas lain. Kendaraan, Tiang lampu, batu, dll.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -274,7 +273,7 @@
                                     <input type="number" oninput="applyValueChange(this)" name="vecCentreOfMassOffset"
                                         class="form-control text-center my-2" step="0.001"
                                         id="d_vecCentreOfMassOffsetInput" disabled>
-                                    <p>This editor is not able to edit the Center Of Mass offsets yet.</p>
+                                    <p>Editor ini belum dapat mengedit offset Center Of Mass.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -293,7 +292,7 @@
                                     <input type="number" oninput="applyValueChange(this)" name="vecInertiaMultiplier"
                                         class="form-control text-center my-2" step="0.001"
                                         id="d_vecInertiaMultiplierInput" disabled>
-                                    <p>This editor is not able to edit the Rotational Inertia offsets yet.</p>
+                                    <p>Editor ini belum dapat mengedit offset Inersia Rotasi.</p>
                                 </div>
                             </div>
                         </div>
@@ -303,9 +302,9 @@
             <div class="pb-5  tab-pane fade" id="engine" role="tabpanel" aria-labelledby="engine-tab">
                 <div class="border mt-3">
                     <h3 class="text-center py-1">Engine</h3>
-                    <p class="px-5 text-center">The moving force of your vehicle, this set of values govern details
-                        about how different bits of the engine will behave.
-                        <br>Works in close relationswhip with Transmission.
+                    <p class="px-5 text-center">Kekuatan penggerak kendaraan Anda, rangkaian nilai ini mengatur detailnya
+                        tentang bagaimana bagian-bagian mesin yang berbeda akan berperilaku.
+                        <br>Bekerja dalam hubungan dekat dengan Transmisi.
                     </p>
 
                     <hr>
@@ -328,15 +327,15 @@
                                     name="fInitialDriveForce">
                                 <!-- <p class=" text-center">Acceleration: <span class="text-danger"
                                         id="fInitialDriveForceExpl"></span> mph per second in 1º gear.</p>-->
-                                <p>Also called engine power, it dictates the target acceleration the engine is aiming
-                                    for, measured in
-                                    G-Forces. Wheel grip may not be able to cope with it, however.
+                                <p>Disebut juga tenaga mesin, ini menentukan target akselerasi yang dituju mesin
+                                    untuk, diukur dalam
+                                    G-Force. Namun cengkeraman roda mungkin tidak mampu mengatasinya.
                                 </p>
-                                <p>Gearing modulates this value in ratios to translate it into torque, which is the
-                                    final acceleration the vehicle will experience.</p>
+                                <p>Gearing memodulasi nilai ini dalam rasio untuk menerjemahkannya menjadi torsi, yaitu
+                                    percepatan akhir yang akan dialami kendaraan.</p>
                                 <hr>
-                                <p>Electric vehicles bypass this entirely, starting with x5 torque whith drains to x1 at
-                                    the top speed.</p>
+                                <p>Kendaraan listrik mengabaikan hal ini sepenuhnya, dimulai dengan torsi x5 yang mengalir hingga x1 at
+                                    kecepatan tertinggi</p>
 
                             </div>
                         </div>
@@ -357,20 +356,19 @@
                                 <input class="form-control text-center my-2" type="number"
                                     oninput="applyValueChange(this)" step="0.001" id="fDriveInertiaInput"
                                     name="fDriveInertia">
-                                <p class=" text-center">The vehicle will go from idle to redline in <span
-                                        class="text-danger" id="fDriveInertiaExpl"></span>s assuming full throttle.</p>
+                                <p class=" text-center">Kendaraan akan bergerak dari posisi idle ke redline in <span
+                                        class="text-danger" id="fDriveInertiaExpl"></span>s dengan asumsi kecepatan penuh.</p>
                                 <hr>
-                                <p>How responsive the engine revs will be to throttle control. It is measured in Higher
-                                    values will result
-                                    in faster RPM acceleration and deceleration, while lower values will result in more
-                                    sluggish RPMs. </p>
+                                <p>Seberapa responsif putaran mesin terhadap kontrol throttle. Itu diukur dalam Lebih Tinggi
+                                    nilai-nilai akan dihasilkan
+                                    dalam akselerasi dan deselerasi RPM yang lebih cepat, sedangkan nilai yang lebih rendah akan menghasilkan lebih banyak
+                                    RPM yang lamban.</p>
 
                                 <p>
-                                    Works similar to how a flywheel acts in real-life vehicles, storing drive momentum
-                                    from the engine. A lighter flywheel can react faster to engine RPM changes with it's
-                                    lack of weight, while heavier flywheels have higher momentum force which takes more
-                                    engine power to influence.
-                                </p>
+                                    Cara kerjanya mirip dengan cara kerja roda gila pada kendaraan di kehidupan nyata, yaitu menyimpan momentum penggerak
+                                    dari mesin. Roda gila yang lebih ringan dapat bereaksi lebih cepat terhadap perubahan RPM mesinnya
+                                    kurangnya bobot, sedangkan roda gila yang lebih berat memiliki gaya momentum yang lebih tinggi sehingga membutuhkan lebih banyak tenaga
+                                    kekuatan mesin untuk mempengaruhi.</p>
                             </div>
 
                         </div>
